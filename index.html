@@ -10,17 +10,31 @@
 
     <h1>Etch-a-sketch</h1>
 
-    <button onclick="changeGrid()">Change grid</button>
+    <div class="buttonMenu">
 
-    <button onclick="changeColor('red')">Red</button>
-    <button onclick="changeColor('blue')">Blue</button>
-    <button onclick="changeColor('green')">Green</button>
+        <!-- Button for change grid -->
+        <button onclick="changeGrid()">Change grid</button>
 
-    <button onclick="eraser()">Eraser</button>
-    <button onclick="clearGrid()">Clear grid</button>
+        <!-- Color choice buttons -->
+        <button id="red" onclick="changeColor('red')">Red</button>
+        <button id="blue" onclick="changeColor('blue')">Blue</button>
+        <button id="green" onclick="changeColor('green')">Green</button>
 
+        <!-- Grid cleaning tools -->
+        <button onclick="eraser()">Eraser</button>
+        <button onclick="clearGrid()">Clear grid</button>
+
+    </div>
+
+    
+    <!-- Grid -->
     <div id="container"></div>
 
+
+    <!-- Copyright footer -->
+    <footer><a href="https://github.com/dexterz-m">Copyright © 2024 D3X</a></footer>
+
     <script src="main.js"></script>
+
 </body>
 </html>

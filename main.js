@@ -1,10 +1,15 @@
 
 // Grid
+
+// Setting up deafult settings for grid
+
 const container = document.querySelector('#container');
 
 let grids = 16;
 
 var color = "black";
+
+// Making grid
 
 function makeGrid(grids){
     for(let i = 0; i < grids; i++){
@@ -20,6 +25,8 @@ function makeGrid(grids){
 
 makeGrid(grids)
 
+
+// Change grid depending on user input
 
 function changeGrid(count){
 
@@ -42,17 +49,25 @@ function changeGrid(count){
     
 }
 
+// Color that will be used after startup
+
 function deafultColor(){
     this.style.backgroundColor = color;
 }
+
+// Color that is changed depending on color button
 
 function changeColor(newColor){
     color = newColor;
 }
 
+// Eraser mode
+
 function eraser(){
     color = 'white';
 }
+
+// Function to clear grid in 1 click
 
 function clearGrid(){
 
